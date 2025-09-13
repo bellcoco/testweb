@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Danh mục sản phẩm - Chu Phương Linh</title>
+    <title>Trang Thanh Toán - Chu Phương Linh</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -100,82 +100,96 @@
     <!-- Navbar End -->
 
 
+
     <!-- Single Page Header start -->
     <div class="container-fluid page-header py-sm-5 py-0">
-        <h1 class="text-center text-black display-6">Danh mục: Trị mụn</h1>
+        <h1 class="text-center text-black display-6">Thanh toán</h1>
         <!-- <ol class="breadcrumb justify-content-center mb-0">
-            <li class="breadcrumb-item"><a href="#">Danh mục sản phẩm</a></li>
-            <li class="breadcrumb-item active text-white">Kem chống nắng</li>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+            <li class="breadcrumb-item active text-white">Checkout</li>
         </ol> -->
     </div>
     <!-- Single Page Header End -->
 
 
-    <!-- Fruits Shop Start-->
-    <div class="container-fluid fruite py-sm-5 py-0">
-        <div class="container py-sm-5 py-2">
-            <div class="row g-4">
-                <div class="col-lg-12">
-                    <div class="row g-4">
-                        <div class="col-lg-12">
-                            <div class="row g-4 justify-content-center">
-
-                                  <!-- Product 1 -->
-                                <div class="col-md-6 col-lg-6 col-xl-3">
-                                    <div class="rounded position-relative fruite-item">
-                                        <div class="fruite-img">
-                                            <img src="img/MP0750.jpg" class="img-fluid w-100 rounded-top" alt="">
-                                        </div>
-                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                                            style="top: 10px; left: 10px;">new</div>
-                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                            <h4>MP0750 - Kem chống nắng Chuskin</h4>
-                                            <p>Kem chống nắng kiềm dầu, kháng viêm giảm mụn, giảm thâm nám, mờ tàn nhang</p>
-                                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                                <p class="text-dark fs-5 fw-bold mb-0">450.000đ</p>
-                                                <a href="#"
-                                                    class="btn border border-secondary rounded-pill px-3 text-primary"><i
-                                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to
-                                                    cart</a>
+    <!-- Checkout Page Start -->
+    <div class="container-fluid py-sm-5 py-0">
+        <div class="container py-sm-5 py-0">
+            <h4 class="mb-sm-4 mb-1">Thông tin khách hàng</h4>
+            <form action="#">
+                <div class="row g-5">
+                    <div class="col-md-12 col-lg-6 col-xl-7">
+                        <div class="form-item">
+                            <label class="form-label my-3">Họ tên<sup>*</sup></label>
+                            <input required type="text" class="form-control" id="cust-name">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label my-3">Số điện thoại<sup>*</sup></label>
+                            <input required type="tel" class="form-control" id="cust-phone">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label my-3">Địa chỉ<sup>*</sup></label>
+                            <input required type="text" class="form-control" id="cust-address">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label my-3">Ghi chú (nếu có)<sup></sup></label>
+                            <input type="text" class="form-control" id="cust-note">
+                        </div>
+                        <div class="form-check my-3">
+                            <input type="checkbox" class="form-check-input" id="Account-1" name="Accounts"
+                                value="Accounts" checked>
+                            <label class="form-check-label" for="Account-1">Shop sẽ gọi điện xác nhận đơn hàng!</label>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-xl-5">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Sản phẩm</th>
+                                        <th scope="col">Tên</th>
+                                        <th scope="col">Giá</th>
+                                        <th scope="col">SL</th>
+                                        <th scope="col">Tổng</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="checkout-body"><!-- dữ liệu sẽ render bằng JS --></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row"></th>
+                                      
+                                        <td></td>
+                                        <td></td>
+                                          <td class="py-5 text-uppercase fw-bold">Tổng</td>
+                                        <td class="py-5">
+                                            <div class="py-3">
+                                                <p class="mb-0 text-dark" id="checkout-total">0đ</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                                </tfoot>
+                            </table>
 
-                                <!-- Product 2 -->
-                                <div class="col-md-6 col-lg-6 col-xl-3">
-                                    <div class="rounded position-relative fruite-item">
-                                        <div class="fruite-img">
-                                            <img src="img/MP1061.jpg" class="img-fluid w-100 rounded-top" alt="">
-                                        </div>
-                                        <!-- <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                                            style="top: 10px; left: 10px;">new</div> -->
-                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                            <h4>MP1061 - Kem truyền trắng Body Chuskin</h4>
-                                            <p>Giúp dưỡng da mềm mịn, nâng tone, dưỡng ẩm cho da, chống nắng và làm trắng sáng cho da</p>
-                                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                                <p class="text-dark fs-5 fw-bold mb-0">450.000đ</p>
-                                                <a href="#"
-                                                    class="btn border border-secondary rounded-pill px-3 text-primary"><i
-                                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to
-                                                    cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="row g-4 text-center align-items-center justify-content-center pt-4">
+                            <button type="submit"
+                                class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary"  id="btn-place-order">Đặt
+                                hàng</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-    <!-- Fruits Shop End-->
+    <!-- Checkout Page End -->
 
 
-     <!-- Footer Start -->
+    <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
-        <div class="container  py-1 py-sm-5">
+        <div class="container py-5">
             <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
                 <div class="row g-4">
                     <div class="col-lg-3">
@@ -230,25 +244,12 @@
                         <a class="btn-link" href="">FAQs & Help</a>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <div class="d-flex flex-column text-start footer-item">
-                        <h4 class="text-light mb-3">Account</h4>
-                        <a class="btn-link" href="">My Account</a>
-                        <a class="btn-link" href="">Shop details</a>
-                        <a class="btn-link" href="">Shopping Cart</a>
-                        <a class="btn-link" href="">Wishlist</a>
-                        <a class="btn-link" href="">Order History</a>
-                        <a class="btn-link" href="">International Orders</a>
-                    </div>
-                </div> -->
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-item">
                         <h4 class="text-light mb-3">Liên hệ</h4>
                         <p>Địa chỉ: Phố Thái Hà, Hà Nội, Việt Nam</p>
                         <p>Email: chuphuonglinh@gmail.com</p>
                         <p>CSKH: 0965 901 520</p>
-                        <!-- <p>Payment Accepted</p> -->
-                        <!-- <img src="img/payment.png" class="img-fluid" alt=""> -->
                     </div>
                 </div>
             </div>
@@ -287,6 +288,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/addToCart.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/submit-order.js"></script>
 </body>
 
 </html>

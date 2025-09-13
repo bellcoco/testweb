@@ -28,6 +28,7 @@
       cart.push(product);
     }
     saveCart(cart);
+    updateCartCount();
     alert(`Đã thêm ${product.name} vào giỏ hàng!`);
   }
 
@@ -41,7 +42,8 @@
         const name = productBox.querySelector('.product-name').textContent.trim();
         const desc = productBox.querySelector('.product-desc').textContent.trim();
         const priceText = productBox.querySelector('.product-price').textContent.trim();
-        const price = parseFloat(priceText.replace(/[^0-9.]/g, '')); // lọc số
+        // const price = parseFloat(priceText.replace(/[^0-9.]/g, '')); // lọc số
+        const price = parseInt(priceText.replace(/\D/g, ''), 10); // chỉ giữ số
         const image = productBox.querySelector('img').getAttribute('src');
 
         const product = { name, desc, price, image };
@@ -50,7 +52,7 @@
     });
 
     // Cập nhật số lượng khi load trang
-    updateCartCount();
+    updateCartCount(); 
   });
 
 })();
